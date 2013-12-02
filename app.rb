@@ -6,6 +6,7 @@ class MyApp < Sinatra::Base
     erb :index
   end
   get "/users/:id" do
+    params[:id]
     erb :user
   end
 
